@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/screen1Fragment">
+
+    <fragment
+        android:id="@+id/screen1Fragment"
+        android:name="com.sopian.challengethree.ui.FirstFragment"
+        android:label="Screen 1"
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_screen1Fragment_to_screen2Fragment"
+            app:destination="@id/screen2Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/screen2Fragment"
+        android:name="com.sopian.challengethree.ui.SecondFragment"
+        android:label="Screen 2"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_screen2Fragment_to_screen3Fragment"
+            app:destination="@id/screen3Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+    </fragment>
+    <fragment
+        android:id="@+id/screen3Fragment"
+        android:name="com.sopian.challengethree.ui.ThirdFragment"
+        android:label="Screen 3"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_screen3Fragment_to_screen4Fragment"
+            app:destination="@id/screen4Fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"/>
+        <argument
+            android:name="person"
+            app:argType="com.sopian.challengethree.Person" />
+    </fragment>
+    <fragment
+        android:id="@+id/screen4Fragment"
+        android:name="com.sopian.challengethree.ui.FourthFragment"
+        android:label="Screen 4"
+        tools:layout="@layout/fragment_fourth" >
+        <argument
+            android:name="person"
+            app:argType="com.sopian.challengethree.Person" />
+    </fragment>
+</navigation>

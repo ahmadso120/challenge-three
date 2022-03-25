@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Challenge Three</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    
+    <string name="age_string">%d, %s</string>
+</resources>
